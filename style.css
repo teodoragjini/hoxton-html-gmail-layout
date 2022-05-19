@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+}
+
+.container{
+    display: grid;
+    height: 100vh; 
+    grid-template:
+    'header header header' 50px
+    'left-menu main right-menu' 1fr /
+    1fr  1fr 1fr 
+}
+
+.header{
+    background-color: rgb(213, 241, 241);
+    grid-area: header;
+}
+
+.left-menu{
+    background-color: rgb(198, 135, 202);
+    grid-area: left-menu;
+}
+
+.main{
+    background-color: rgb(157, 225, 169);
+    grid-area: main;
+}
+
+.right-menu{
+    background-color: rgb(219, 222, 181);
+    grid-area: right-menu;
+}
